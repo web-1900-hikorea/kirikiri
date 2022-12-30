@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 public class Criteria {
     private String userId;
     private Integer page;
-
 //    public Criteria(String userId){
 //        this.userId = userId;
 //        this.page = 1;
