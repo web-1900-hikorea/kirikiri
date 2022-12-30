@@ -1,6 +1,5 @@
 package com.example.kirikiri.mapper;
 
-import com.example.kirikiri.domain.Criteria;
 import com.example.kirikiri.domain.BoardVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -14,7 +13,6 @@ public class BoardMapperTest {
     private BoardMapper boardMapper;
 
     @Test
-<<<<<<< HEAD
     public void selectAllTest(){
         boardMapper.selectAll().stream().map(BoardVO::toString).forEach(log::info);
     }
@@ -46,9 +44,5 @@ public class BoardMapperTest {
     @Test
     public void selectTest(){
         boardMapper.select(3L);
-=======
-    public void selectWritten(){
-        log.info(boardMapper.selectWritten("kevs").toString());
->>>>>>> myWorkSpace3
     }
 }
