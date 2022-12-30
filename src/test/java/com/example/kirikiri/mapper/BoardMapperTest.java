@@ -1,9 +1,7 @@
 package com.example.kirikiri.mapper;
 
-<<<<<<< HEAD
+import com.example.kirikiri.domain.Criteria;
 import com.example.kirikiri.domain.BoardVO;
-=======
->>>>>>> myWorkSpace3
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
