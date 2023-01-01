@@ -34,4 +34,7 @@ public interface BoardMapper {
 
     // 작성한 게시글 조회
     public List<BoardVO> selectWritten(@Param("userId") String userId, @Param("page") Integer page);
+
+    //게시글 검색
+    public List<BoardVO> search(String keyword);
 }

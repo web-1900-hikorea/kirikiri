@@ -3,16 +3,14 @@ package com.example.kirikiri.controller;
 import com.example.kirikiri.domain.BoardVO;
 import com.example.kirikiri.domain.PageBoardDTO;
 import com.example.kirikiri.domain.UserVO;
-import com.example.kirikiri.mapper.BoardMapper;
 import com.example.kirikiri.service.BoardService;
-import jdk.jfr.Category;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
+
+import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
@@ -75,7 +73,6 @@ public class BoardController {
         model.addAttribute("userCheck", userCheck);
         return "/post";
     }
-
     //    작성한 게시글 조회
     @GetMapping("/activity")
     public void getWrittenBoard(String userId, Integer page, Model model){

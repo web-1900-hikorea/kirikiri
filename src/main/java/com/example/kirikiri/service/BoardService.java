@@ -2,8 +2,6 @@ package com.example.kirikiri.service;
 
 import com.example.kirikiri.domain.BoardVO;
 
-import com.example.kirikiri.repository.BoardDAO;
-
 
 import java.util.List;
 

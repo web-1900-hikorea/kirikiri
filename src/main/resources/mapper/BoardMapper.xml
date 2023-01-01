@@ -56,4 +56,9 @@
         WHERE R > (#{page}-1) * 10
         ]]>
     </select>
+    <select id="search" resultType="boardVO">
+        SELECT BOARD_ID, CATEGORY_NAME, BOARD_TITLE, BOARD_REGISTER_DATE
+        FROM TBL_BOARD
+        WHERE BOARD_TITLE LIKE '%'||#{keyword}||'%'
+    </select>
 </mapper>

@@ -26,7 +26,6 @@ public class BoardMapperTest {
         boardVO.setBoardTitle("새 제목입니다.");
         boardVO.setBoardContent("새 내용입니다.");
         boardVO.setUserId("aaa");
-
         boardMapper.insert(boardVO);
     }
 
@@ -37,12 +36,16 @@ public class BoardMapperTest {
         boardVO.setDetailCategoryName("가정");
         boardVO.setBoardTitle("수정된 제목입니다.");
         boardVO.setBoardContent("수정된 내용입니다.");
-
         boardMapper.update(boardVO);
     }
 
     @Test
     public void selectTest(){
         boardMapper.select(3L);
+    }
+
+    @Test
+    public void searchTest() {
+        boardMapper.search("제목");
     }
 }
