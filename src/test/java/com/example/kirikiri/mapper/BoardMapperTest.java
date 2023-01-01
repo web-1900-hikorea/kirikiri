@@ -40,6 +40,11 @@ public class BoardMapperTest {
     }
 
     @Test
+    public void updateViewTest(){
+        boardMapper.updateView(15L);
+    }
+
+    @Test
     public void selectTest(){
         boardMapper.select(3L);
     }
@@ -47,5 +52,10 @@ public class BoardMapperTest {
     @Test
     public void searchTest() {
         boardMapper.search("제목");
+    }
+
+    @Test
+    public void searchTest(){
+        boardMapper.search("want").stream().map(BoardVO::toString).forEach(log::info);
     }
 }
